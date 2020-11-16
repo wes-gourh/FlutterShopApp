@@ -37,13 +37,16 @@ class _EditProductScreenState extends State<EditProductScreen> {
 
   var _isInit = true;
   @override
+  // ignore: must_call_super
   void initState() {
+    // ignore: todo
     // TODO: implement initState
     _imageUrlFocusNode.addListener(_updateImageUrl);
   }
 
   @override
   void didChangeDependencies() {
+    // ignore: todo
     // TODO: implement didChangeDependencies
     if (_isInit) {
       final productId = ModalRoute.of(context).settings.arguments as String;
@@ -98,6 +101,7 @@ class _EditProductScreenState extends State<EditProductScreen> {
 
   @override
   void dispose() {
+    // ignore: todo
     // TODO: implement dispose
     _imageUrlFocusNode.removeListener(_updateImageUrl);
     _priceFocusNode.dispose();
